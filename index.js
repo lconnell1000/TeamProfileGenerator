@@ -8,10 +8,7 @@ const path = require("path");
 const fs = require("fs");
 const team = [];
 const render = require("./JS/renderer");
-const { listenerCount } = require("process");
 
-const OUTPUT_DIR = path.resolve(__dirname, "output");
-const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 function manager () {
     inquirer.prompt ([
