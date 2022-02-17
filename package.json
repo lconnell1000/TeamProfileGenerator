@@ -19,5 +19,8 @@
   "directories": {
     "test": "tests"
   },
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "dependencies": "^0.0.1"
+  }
 }
