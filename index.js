@@ -1,8 +1,9 @@
-const Manager = require("./JS/Manager.js");
+const inquirer = require("inquirer");
+const Manager = require("./JS/Manager");
 const Engineer = require("./JS/Engineer");
 const Intern = require("./JS/Intern");
 
-const inquirer = require("inquirer");
+
 const path = require("path");
 const fs = require("fs");
 const team = [];
@@ -98,6 +99,12 @@ function manager () {
                         console.log("thankyou for entering all employees details")
                         createHTML(team);
                     }
+                });
+            }
+
+        });}
+
+        manager()
 
             function createHTML(team) {
                 const html = render(team, "My Team")
@@ -111,4 +118,4 @@ function manager () {
                     console.log("myteam html created successfully!")
                 })
             }
-        })}})}
+        

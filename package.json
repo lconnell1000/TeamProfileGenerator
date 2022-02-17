@@ -21,6 +21,7 @@
   },
   "description": "",
   "dependencies": {
-    "dependencies": "^0.0.1"
+    "dependencies": "^0.0.1",
+    "inquirer": "^8.2.0"
   }
 }
