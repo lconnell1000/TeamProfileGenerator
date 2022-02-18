@@ -1,6 +1,6 @@
 //define and export the employee class (parent class of others)
 
-class employee {
+class Employee {
     constructor(name, id, email) {
         this.name = name
         this.id = id
@@ -25,4 +25,4 @@ class employee {
     }
 }
 
-module.exports = employee
+module.exports = Employee
