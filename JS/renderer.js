@@ -6,6 +6,7 @@ const fs = require("fs");
 const templatesDir = path.resolve(__dirname, "../templates");
 
 const render = employees => {
+    console.log('employees function hit', employees)
   const html = [];
 
   html.push(...employees
@@ -26,6 +27,7 @@ const render = employees => {
 };
 
 const renderManager = manager => {
+    console.log('manager function hit', manager)
   let template = fs.readFileSync(path.resolve(templatesDir, "manager.html"), "utf8");
   template = replacePlaceholders(template, "name", manager.Name);
   template = replacePlaceholders(template, "jobType", manager.JobType);
