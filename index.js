@@ -21,7 +21,7 @@ function manager () {
             message: 'Please enter managers office number'
         },
         {
-            name: 'iD',
+            name: 'id',
             message: 'please enter mangers id',
         },
         {
@@ -30,20 +30,20 @@ function manager () {
         },
     ])
     .then(answers => {
-        const newManager = new Manager (answers.name, answers.iD, answers.email, answers.officeNumber)
+        const newManager = new Manager (answers.name, answers.id, answers.email, answers.officeNumber)
         team.push(newManager)
         newEmployee() 
         function newEmployee () {
             inquirer.prompt ( [{
                 type: 'list',
                 name: 'jobType',
-                message: 'select type of employee or select end if all employees added',
+                message: 'select type of employee to create or select end if all employees added',
                 choices: ['engineer', 'intern', 'end'],
             },
             ])
             .then(answers => {
                 console.log(answers)
-                if (answers.jobTpye === 'engineer') {
+                if (answers.jobType === 'engineer') {
                     console.log("engineer")
                     inquirer.prompt ([{
                         name: 'name',
@@ -54,7 +54,7 @@ function manager () {
                         message: 'what is the engineers github username',
                     },
                     {
-                        name: 'iD',
+                        name: 'id',
                         message: 'please enter engineers id',
                     },
                     {
@@ -65,9 +65,10 @@ function manager () {
                 .then(answers => {
                     const newEngineer = new Engineer(answers.name, answers.id, answers.email, answers.github)
                         team.push(newEngineer)
+                        //console.log(team)
                         newEmployee()
                 })}
-                    else if (answers.jobTpye === 'intern') {
+                    else if (answers.jobType === 'intern') {
                         console.log("intern")
                         inquirer.prompt ([
                             {
@@ -79,7 +80,7 @@ function manager () {
                               message: 'please enter the interns school',
                           },
                           {
-                            name: 'iD',
+                            name: 'id',
                             message: 'please enter interns id',
                         },
                         {
@@ -92,9 +93,13 @@ function manager () {
                             team.push(newIntern)
                             newEmployee()
                     })}
-                    else {
+                    else if (answers.jobType === 'end') {
                         console.log("thankyou for entering all employees details")
                         createHTML(team);
+                    }
+
+                    else {
+                        console.log("ERROR")
                     }
                 });
             }
