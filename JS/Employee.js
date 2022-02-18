@@ -5,7 +5,7 @@ class employee {
         this.name = name
         this.id = id
         this.email = email
-        this.jobType = "employee"
+        this.jobType = "Employee"
     }
 
     get Name() {
