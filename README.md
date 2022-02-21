@@ -56,7 +56,7 @@ The following image shows what the web page looks like once it is generated from
 ## Testing
 The following image shows the testing for this assignemnt, you can see their are 4 test suites, and 12 tests which all passed. To execute the testing you just type "npm run test" in the terminal.
 
-![ A screenshot of the terminal line for testing.](./Assets/Screenshot3.png)
+![ A screenshot of the terminal line for testing.](./Assets/Screenshot4.png)
 
 ## A link to a video walk through of the demo
 
