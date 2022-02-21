@@ -53,6 +53,11 @@ The following image shows what the web page looks like once it is generated from
 
 ![ A screenshot of the final product](./Assets/Screenshot3.png)
 
+## Testing
+The following image shows the testing for this assignemnt, you can see their are 4 test suites, and 12 tests which all passed. To execute the testing you just type "npm run test" in the terminal.
+
+![ A screenshot of the terminal line for testing.](./Assets/Screenshot3.png)
+
 ## A link to a video walk through of the demo
 
 This link shows a video of the ReadMe Generator in action: https://drive.google.com/file/d/19Dylqekloj3YLcPEVy72itDfpZRG1U2s/view
