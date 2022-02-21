@@ -1,4 +1,4 @@
-const { expect } = require("@jest/globals");
+
 const Engineer = require("../JS/Engineer");
 
 test("should create an engineer object which is an object", () => {
@@ -6,7 +6,7 @@ test("should create an engineer object which is an object", () => {
     expect(typeof(engineer)).toEqual("object");
     });
 
-    test("should create an engineer object which containes, name, id and email", () => {
+    test("should create an engineer object which containes, name, id, email and github username", () => {
         const engineer = new Engineer ('Lachie', 111, 'lconnell1000@gmail.com', 'lconnell1000');
 
         expect(engineer.name).toEqual('Lachie');
