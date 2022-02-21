@@ -20,9 +20,6 @@ class Employee {
     return this.email;
   }
 
-  get JobType() {
-    return this.jobType;
-  }
 }
 
 module.exports = Employee;
